@@ -1,6 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export GOPATH=$HOME/Projects/go
+export PATH="$PATH:$GOPATH/bin"
+export PATH=$PATH:/usr/local/kubebuilder/bin
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ttrawick/.oh-my-zsh"
 
@@ -89,47 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-#############
-## ALIASES ##
-#############
-
-alias cat='bat'
-alias j='z'
-alias terraform='terragrunt'
-alias tf='terragrunt'
-
-# LS Stuff
-alias ls='exa --group-directories-first'
-alias ll='exa -la'
-alias ld='exa -d */'
-alias la='exa -CA'
-alias l='exa'
-
-# GIT Stuff
-alias gs='git status'
-alias gc='git commit -m'
-alias gca='git commit -am'
-alias ga='git add'
-alias gaa='git add .'
-
-export GOPATH=$HOME/Projects/go
-export PATH="$PATH:$GOPATH/bin"
-export PATH=$PATH:/usr/local/kubebuilder/bin
-
-alias gr='go run main.go'
-alias drm='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
-
-##########
-
+source $HOME/.aliases

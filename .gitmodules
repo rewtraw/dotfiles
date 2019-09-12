@@ -1,0 +1,12 @@
+[submodule ".oh-my-zsh/custom/plugins/zsh-autosuggestions"]
+	path = .oh-my-zsh/custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule ".oh-my-zsh/custom/plugins/fzf-z"]
+	path = .oh-my-zsh/custom/plugins/fzf-z
+	url = https://github.com/andrewferrier/fzf-z.git
+[submodule ".oh-my-zsh/custom/plugins/git-open"]
+	path = .oh-my-zsh/custom/plugins/git-open
+	url = https://github.com/paulirish/git-open.git
+[submodule ".oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
+	path = .oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
