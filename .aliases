@@ -4,6 +4,7 @@
 ## ALIASES ##
 #############
 
+alias ysub='submodule update --init --recursive'
 alias cat='bat'
 alias j='z'
 alias terraform='terragrunt'
